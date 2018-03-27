@@ -7,5 +7,7 @@
 
 module.exports = {
 
-    
+    GetUser: (req,res) => {
+        res.send("hello");
+    }
 };

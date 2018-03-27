@@ -35,6 +35,8 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
+  '/Users': 'UsersController.GetUser',
+  '/phonegap/test': 'PhoneGapController.view',
   '/GroupCategories' : 'GroupCategoriesController.ViewAll',
   '/GroupCategories/GetBy/:id': 'GroupCategoriesController.GetBy',
   '/Add/Groups/:id/:name/:description': 'GroupsController.AddGroup'

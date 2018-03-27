@@ -1,4 +1,5 @@
 /**
+ * *
  * Cross-Origin Resource Sharing (CORS) Settings
  * (sails.config.cors)
  *
@@ -13,6 +14,7 @@
  * Note that any of these settings (besides 'allRoutes') can be changed on a per-route basis
  * by adding a "cors" object to the route configuration:
  *
+ * 
  * '/get foo': {
  *   controller: 'foo',
  *   action: 'bar',
@@ -37,7 +39,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  // allRoutes: false,
+allRoutes: true,
 
   /***************************************************************************
   *                                                                          *
@@ -47,7 +49,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  // origin: '*',
+origin: '*',
 
   /***************************************************************************
   *                                                                          *
@@ -55,7 +57,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  // credentials: true,
+  credentials: true,
 
   /***************************************************************************
   *                                                                          *
@@ -63,8 +65,8 @@ module.exports.cors = {
   * response to preflight requests (see article linked above for more info)  *
   *                                                                          *
   ***************************************************************************/
-
-  // methods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
+  
+  methods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
 
   /***************************************************************************
   *                                                                          *
@@ -73,6 +75,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  // headers: 'content-type'
+  headers: 'content-type, Authorization',
+
 
 };

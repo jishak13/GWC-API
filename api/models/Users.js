@@ -84,5 +84,7 @@ module.exports = {
       required: true,
       size: 1
     }
-  }
+  },
+
+  
 };

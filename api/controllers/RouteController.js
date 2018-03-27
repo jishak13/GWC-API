@@ -6,12 +6,11 @@
  */
 
 module.exports = {
-	
-
 
   /**
-   * `RouteController.HelloWorld()`
-   */
+  * `RouteController.HelloWorld()`
+  */
+
   HelloWorld: function (req, res) {
     return res.json({
       todo: 'HelloWorld() is not implemented yet!'
