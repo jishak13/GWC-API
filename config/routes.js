@@ -35,8 +35,9 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-
-  '/GroupCategories/GetBy/:id': 'GroupCategoriesController.GetBy'
+  '/GroupCategories' : 'GroupCategoriesController.ViewAll',
+  '/GroupCategories/GetBy/:id': 'GroupCategoriesController.GetBy',
+  '/Add/Groups/:id/:name/:description': 'GroupsController.AddGroup'
 
   /***************************************************************************
   *                                                                          *
