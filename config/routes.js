@@ -30,11 +30,13 @@ module.exports.routes = {
   * (Alternatively, remove this and add an `index.html` file in your         *
   * `assets` directory)                                                      *
   *                                                                          *
-  ***************************************************************************/
+  *******************************k********************************************/
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  '/GroupCategories/GetBy/:id': 'GroupCategoriesController.GetBy'
 
   /***************************************************************************
   *                                                                          *
